@@ -75,11 +75,20 @@ body {
 .gh-user img {
   width: 100%; }
 
-.repo__section {
-  float: right; }
+.gh-user__name {
+  margin-bottom: 0; }
+
+.gh-username {
+  font-weight: 300;
+  margin-top: 0; }
+
+.gh-user__location {
+  font-weight: 300; }
 
 .gh-repo__item {
   display: block;
-  color: #4078c0; }
+  color: #4078c0;
+  font-size: 20px;
+  font-weight: 600; }
 
 /*# sourceMappingURL=main.css.map */
