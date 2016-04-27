@@ -62,12 +62,24 @@
   font-size: 1.8rem; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: helvetica; }
 
 body {
   font-size: 1.8rem; }
 
-.gh-repo__item {
+.gh-user {
   display: block; }
+
+.gh-user img {
+  width: 100%; }
+
+.repo__section {
+  float: right; }
+
+.gh-repo__item {
+  display: block;
+  color: #4078c0; }
 
 /*# sourceMappingURL=main.css.map */

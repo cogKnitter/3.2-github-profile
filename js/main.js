@@ -10,6 +10,7 @@
   var githubEmailElement = document.querySelector("[data-js='ghUser-email']");
   var githubAvatarElement = document.querySelector("[data-js='ghUser-avatar']");
   var githubURLElement = document.querySelector("[data-js='ghUser-url']");
+  var githubUsernameElement = document.querySelector("[data-js='ghUsername']")
 
   var githubRepoElement = document.querySelector("[data-js='gh-repo']");
   document.addEventListener("DOMContentLoaded", function(e){
@@ -18,6 +19,7 @@
     ghUserXHR.addEventListener("load", function(e){
       var ghUserData = JSON.parse(e.target.responseText);
       githubUserElement.innerHTML = ghUserData.name;
+      githubUsernameElement.innerHTML = ghUserData.login;
       githubBlogElement.innerHTML = ghUserData.blog;
       githubLocationElement.innerHTML = ghUserData.location;
       githubEmailElement.innerHTML = ghUserData.email;

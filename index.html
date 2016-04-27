@@ -6,21 +6,25 @@
     <link rel="stylesheet" href="styles/main.css" charset="utf-8">
   </head>
   <body>
-    <article class="gh-user">
+    <section class="wrapper">
 
-      <h2 class="gh-user" data-js="ghUser-name">Name</h2>
-      <h3 class="user__blog" data-js="ghUser-blog">Blog</h3>
-      <h3 class="user__location" data-js="ghUser-location">Location</h3>
-      <h3 class="user__email" data-js="ghUser-email">Email</h3>
-      <h3 class="user__avatar" data-js="ghUser-avatar">Avatar</h3>
-      <h3 class="user__url" data-js="ghUser-url">url</h3>
 
-      <nav class="user__repo" data-js="gh-repo">
-        <!-- <a class="gh-repo__item" href="<render url here>">REPO NAME</a>  -->
+      <article class="gh-user grid__col--3">
+        <div class="user__avatar" data-js="ghUser-avatar">Avatar</div>
+        <h2 class="gh-user__name" data-js="ghUser-name">Name</h2>
+        <h3 class="gh-username" data-js="ghUsername"></h3>
+        <h4 class="user__blog" data-js="ghUser-blog">Blog</h4>
+        <h4 class="user__location" data-js="ghUser-location">Location</h4>
+        <h4 class="user__email" data-js="ghUser-email">Email</h4>
+        <h4 class="user__url" data-js="ghUser-url">url</h4>
+      </article>
+      <section class="repo__section grid__col--9">
+        <nav class="user__repo" data-js="gh-repo">
+            <!-- <a class="gh-repo__item" href="<render url here>">REPO NAME</a>  -->
 
-      </nav>
-
-  </article>
+        </nav>
+      </section>
+    </section>
   </body>
   <script type="text/javascript" src="js/main.js"></script>
 </html>
